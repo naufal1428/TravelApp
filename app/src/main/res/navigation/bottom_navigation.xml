@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.travelapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.example.travelapp.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_orderTicketFragment"
+            app:destination="@id/orderTicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.travelapp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/orderTicketFragment"
+        android:name="com.example.travelapp.OrderTicketFragment"
+        android:label="fragment_order_ticket"
+        tools:layout="@layout/fragment_order_ticket" >
+        <action
+            android:id="@+id/action_orderTicketFragment_to_ticketTypeFragment"
+            app:destination="@id/ticketTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketTypeFragment"
+        android:name="com.example.travelapp.TicketTypeFragment"
+        android:label="fragment_ticket_type"
+        tools:layout="@layout/fragment_ticket_type" />
+</navigation>

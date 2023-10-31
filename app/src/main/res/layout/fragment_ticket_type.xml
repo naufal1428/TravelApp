@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    tools:context=".TicketTypeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Spinner
+        android:id="@+id/spinnerTicketType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/jenis_tiket"
+        android:background="@drawable/spinner_background"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnBuy3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Ticket"/>
+
+</LinearLayout>
